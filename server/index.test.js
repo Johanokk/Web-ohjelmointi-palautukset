@@ -23,7 +23,7 @@ describe("Testing basic database functionality", () => {
   });
 
   it("should delete task", async () => {
-    const response = await fetch("http://localhost:3001/delete/15", {
+    const response = await fetch("http://localhost:3001/delete/92", {
       method: "delete"
     });
     const data = await response.json();
