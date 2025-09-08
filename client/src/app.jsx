@@ -40,6 +40,11 @@ function App() {
       <input
         value={task}
         onChange={e => setTask(e.target.value)}
+        onKeyDown={e => {
+          if (e.key === 'Enter') {
+            addTask();
+          }
+        }}
         placeholder="Kirjoita tehtävä"
       />
       <button onClick={addTask}>Lisää</button>
